@@ -1,0 +1,784 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.btn {
+    padding: 0.375rem 1.40rem;
+    border: 0;
+    white-space: normal;
+}
+.btn-primary {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    background: #2ecc71; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #2ecc71 0%, #28b161 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #2ecc71 0%,#28b161 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #2ecc71 0%,#28b161 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ecc71', endColorstr='#28b161',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ }
+.btn-primary:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#43d17f+0,3eb971+100 */
+    background: #43d17f; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #43d17f 0%, #3eb971 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #43d17f 0%,#3eb971 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #43d17f 0%,#3eb971 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43d17f', endColorstr='#3eb971',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:focus,
+.btn-primary:active {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#28b161+0,208f4f+100 */
+    background: #28b161; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #28b161 0%, #208f4f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #28b161 0%,#208f4f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #28b161 0%,#208f4f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28b161', endColorstr='#208f4f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    box-shadow: none;
+}
+.btn-secondary{
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef9119+0,d65924+100 */
+    background: #ef9119; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ef9119 0%, #d65924 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ef9119 0%,#d65924 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ef9119 0%,#d65924 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef9119', endColorstr='#d65924',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.btn-secondary:hover{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2a747+0,da6a3a+100 */
+    background: #f2a747; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #f2a747 0%, #da6a3a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #f2a747 0%,#da6a3a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #f2a747 0%,#da6a3a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2a747', endColorstr='#da6a3a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:focus,
+.btn-secondary:active{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d78317+0,c15020+100 */
+    background: #d78317; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #d78317 0%, #c15020 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #d78317 0%,#c15020 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #d78317 0%,#c15020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d78317', endColorstr='#c15020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    box-shadow: none;
+}
+.btn-dark{
+    background-color:#1a2b48;
+}
+.btn-dark:hover{
+    background-color:#48556d;
+}
+.btn-dark:not(:disabled):not(.disabled):active:focus,
+.btn-dark:focus,
+.btn-dark:active{
+    background-color:#15223a;
+    box-shadow: none;
+}
+.btn-dark{
+    padding: 0.375rem 2rem;
+}
+.btn-light:not(:disabled):not(.disabled):active:focus,
+.btn-light:focus,
+.btn-light:active{
+    box-shadow: none;
+}
+.rates-holder {
+    position: relative;
+    top: 25px;
+    color: #fff;
+}
+.rates-holder span {
+    opacity: .7;
+    font-size: 70%;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+section {
+    padding:100px 0;
+}
+.hero {
+    padding:150px 0;
+    overflow: hidden;
+}
+.hero .col-md-6:nth-child(2) {
+    height: 250px;
+}
+.hero svg {
+    width:140%;
+    position: relative;
+    left: -10%;
+}
+::-moz-selection { /* Code for Firefox */3
+    color: #fff;
+    background: rgba(231,139,32,0.8);
+}
+
+::selection {
+    color: #fff;
+    background: rgba(231,139,32,0.8);
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .hero .col-md-6:nth-child(2) {
+        height: 350px;
+    }
+}
+@media screen and (min-width: 980px) {
+    .hero svg {
+        top: -30%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding: 200px 0 150px 0;
+    }
+    .hero svg {
+        top: -50%;
+    }
+}
+#signal-line path {
+    opacity: 0;
+}
+#signal-line {
+    animation: signal-line ease 3s infinite;
+}
+#light-1,
+#light-2,
+#light-3 {
+    animation: light-pulse ease 3s infinite;
+}
+#btc-coin {
+    animation: BTCfloat 6s ease-in-out infinite;
+}
+#ltc-coin {
+    animation: LTCfloat 4s ease-in-out infinite;
+}
+#eth-coin {
+    animation: ETHfloat 5s ease-in-out infinite;
+}
+@keyframes light-pulse {
+    0% {
+        opacity: .5;
+    }
+    50% {
+        opacity: .9;
+    }
+    100% {
+        opacity: .5;
+    }
+}
+@keyframes BTCfloat {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-15px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes LTCfloat {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-8px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes ETHfloat {
+	0% {
+		transform: translatey(-20px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+        transform: translatey(-20px);
+	}
+}
+#signal-line #dot1 {animation: dot1 2.35s alternate infinite;}
+#signal-line #dot2 {animation: dot2 2.35s alternate infinite;}
+#signal-line #dot3 {animation: dot3 2.35s alternate infinite;}
+#signal-line #dot4 {animation: dot4 2.35s alternate infinite;}
+#signal-line #dot5 {animation: dot5 2.35s alternate infinite;}
+#signal-line #dot6 {animation: dot6 2.35s alternate infinite;}
+#signal-line #dot7 {animation: dot7 2.35s alternate infinite;}
+#signal-line #dot8 {animation: dot8 2.35s alternate infinite;}
+#signal-line #dot9 {animation: dot9 2.35s alternate infinite;}
+#signal-line #dot10 {animation: dot10 2.35s alternate infinite;}
+#signal-line #dot11 {animation: dot11 2.35s alternate infinite;}
+#signal-line #dot12 {animation: dot12 2.35s alternate infinite;}
+#signal-line #dot13 {animation: dot13 2.35s alternate infinite;}
+#signal-line #dot14 {animation: dot14 2.35s alternate infinite;}
+#signal-line #dot15 {animation: dot15 2.35s alternate infinite;}
+#signal-line #dot16 {animation: dot16 2.35s alternate infinite;}
+#signal-line #dot17 {animation: dot17 2.35s alternate infinite;}
+#signal-line #dot18 {animation: dot18 2.35s alternate infinite;}
+#signal-line #dot19 {animation: dot19 2.35s alternate infinite;}
+#signal-line #dot20 {animation: dot20 2.35s alternate infinite;}
+#signal-line #dot21 {animation: dot21 2.35s alternate infinite;}
+#signal-line #dot22 {animation: dot22 2.35s alternate infinite;}
+#signal-line #dot23 {animation: dot23 2.35s alternate infinite;}
+#signal-line #dot24 {animation: dot24 2.35s alternate infinite;}
+#signal-line #dot25 {animation: dot25 2.35s alternate infinite;}
+#signal-line #dot26 {animation: dot26 2.35s alternate infinite;}
+#signal-line #dot27 {animation: dot27 2.35s alternate infinite;}
+#signal-line #dot28 {animation: dot28 2.35s alternate infinite;}
+#signal-line #dot29 {animation: dot29 2.35s alternate infinite;}
+#signal-line #dot30 {animation: dot30 2.35s alternate infinite;}
+#signal-line #dot31 {animation: dot31 2.35s alternate infinite;}
+#signal-line #dot32 {animation: dot32 2.35s alternate infinite;}
+#signal-line #dot33 {animation: dot33 2.35s alternate infinite;}
+#signal-line #dot34 {animation: dot34 2.35s alternate infinite;}
+#signal-line #dot35 {animation: dot35 2.35s alternate infinite;}
+#signal-line #dot36 {animation: dot36 2.35s alternate infinite;}
+#signal-line #dot37 {animation: dot37 2.35s alternate infinite;}
+#signal-line #dot38 {animation: dot38 2.35s alternate infinite;}
+#signal-line #dot39 {animation: dot39 2.35s alternate infinite;}
+#signal-line #dot40 {animation: dot40 2.35s alternate infinite;}
+#signal-line #dot41 {animation: dot41 2.35s alternate infinite;}
+#signal-line #dot42 {animation: dot42 2.35s alternate infinite;}
+#signal-line #dot43 {animation: dot43 2.35s alternate infinite;}
+#signal-line #dot44 {animation: dot44 2.35s alternate infinite;}
+#signal-line #dot45 {animation: dot45 2.35s alternate infinite;}
+#signal-line #dot46 {animation: dot46 2.35s alternate infinite;}
+#signal-line #dot47 {animation: dot47 2.35s alternate infinite;}
+#signal-line #dot48 {animation: dot48 2.35s alternate infinite;}
+#signal-line #dot49 {animation: dot49 2.35s alternate infinite;}
+#signal-line #dot50 {animation: dot50 2.35s alternate infinite;}
+#signal-line #dot51 {animation: dot51 2.35s alternate infinite;}
+#signal-line #dot52 {animation: dot52 2.35s alternate infinite;}
+#signal-line #dot53 {animation: dot53 2.35s alternate infinite;}
+#signal-line #dot54 {animation: dot54 2.35s alternate infinite;}
+#signal-line #dot55 {animation: dot55 2.35s alternate infinite;}
+#signal-line #dot56 {animation: dot56 2.35s alternate infinite;}
+#signal-line #dot57 {animation: dot57 2.35s alternate infinite;}
+#signal-line #dot58 {animation: dot58 2.35s alternate infinite;}
+
+#XMLID_2661_ * {fill: #223E66;animation: blink 2.35s alternate infinite;}
+
+@keyframes blink { 40% {fill: #223E66;} 43%,47% {fill: #2ecc71} 50% {fill: #223E66;} }
+
+@keyframes dot1 { 20% {opacity: 0;} 21% {opacity: 1;} 40% {opacity: 0;} }
+@keyframes dot2 { 21% {opacity: 0;} 22% {opacity: 1;} 41% {opacity: 0;} }
+@keyframes dot3 { 22% {opacity: 0;} 23% {opacity: 1;} 42% {opacity: 0;} }
+@keyframes dot4 { 23% {opacity: 0;} 24% {opacity: 1;} 43% {opacity: 0;} }
+@keyframes dot5 { 24% {opacity: 0;} 25% {opacity: 1;} 44% {opacity: 0;} }
+@keyframes dot5 { 25% {opacity: 0;} 26% {opacity: 1;} 45% {opacity: 0;} }
+@keyframes dot6 { 26% {opacity: 0;} 27% {opacity: 1;} 46% {opacity: 0;} }
+@keyframes dot7 { 27% {opacity: 0;} 28% {opacity: 1;} 47% {opacity: 0;} }
+@keyframes dot8 { 28% {opacity: 0;} 29% {opacity: 1;} 48% {opacity: 0;} }
+@keyframes dot9 { 29% {opacity: 0;} 30% {opacity: 1;} 49% {opacity: 0;} }
+@keyframes dot10 { 30% {opacity: 0;} 31% {opacity: 1;} 50% {opacity: 0;} }
+@keyframes dot11 { 31% {opacity: 0;} 32% {opacity: 1;} 51% {opacity: 0;} }
+@keyframes dot12 { 32% {opacity: 0;} 33% {opacity: 1;} 52% {opacity: 0;} }
+@keyframes dot13 { 33% {opacity: 0;} 34% {opacity: 1;} 53% {opacity: 0;} }
+@keyframes dot14 { 34% {opacity: 0;} 35% {opacity: 1;} 54% {opacity: 0;} }
+@keyframes dot15 { 35% {opacity: 0;} 36% {opacity: 1;} 55% {opacity: 0;} }
+@keyframes dot16 { 36% {opacity: 0;} 37% {opacity: 1;} 56% {opacity: 0;} }
+@keyframes dot17 { 37% {opacity: 0;} 38% {opacity: 1;} 57% {opacity: 0;} }
+@keyframes dot18 { 38% {opacity: 0;} 39% {opacity: 1;} 58% {opacity: 0;} }
+@keyframes dot19 { 39% {opacity: 0;} 40% {opacity: 1;} 59% {opacity: 0;} }
+@keyframes dot20 { 40% {opacity: 0;} 41% {opacity: 1;} 60% {opacity: 0;} }
+@keyframes dot21 { 41% {opacity: 0;} 42% {opacity: 1;} 61% {opacity: 0;} }
+@keyframes dot22 { 42% {opacity: 0;} 43% {opacity: 1;} 62% {opacity: 0;} }
+@keyframes dot23 { 43% {opacity: 0;} 44% {opacity: 1;} 63% {opacity: 0;} }
+@keyframes dot24 { 44% {opacity: 0;} 45% {opacity: 1;} 64% {opacity: 0;} }
+@keyframes dot25 { 45% {opacity: 0;} 46% {opacity: 1;} 65% {opacity: 0;} }
+@keyframes dot26 { 46% {opacity: 0;} 47% {opacity: 1;} 66% {opacity: 0;} }
+@keyframes dot27 { 47% {opacity: 0;} 48% {opacity: 1;} 67% {opacity: 0;} }
+@keyframes dot28 { 48% {opacity: 0;} 49% {opacity: 1;} 68% {opacity: 0;} }
+@keyframes dot29 { 49% {opacity: 0;} 50% {opacity: 1;} 69% {opacity: 0;} }
+@keyframes dot30 { 50% {opacity: 0;} 51% {opacity: 1;} 70% {opacity: 0;} }
+@keyframes dot31 { 51% {opacity: 0;} 52% {opacity: 1;} 71% {opacity: 0;} }
+@keyframes dot32 { 52% {opacity: 0;} 53% {opacity: 1;} 72% {opacity: 0;} }
+@keyframes dot33 { 53% {opacity: 0;} 54% {opacity: 1;} 73% {opacity: 0;} }
+@keyframes dot34 { 54% {opacity: 0;} 55% {opacity: 1;} 74% {opacity: 0;} }
+@keyframes dot35 { 55% {opacity: 0;} 56% {opacity: 1;} 75% {opacity: 0;} }
+@keyframes dot36 { 56% {opacity: 0;} 57% {opacity: 1;} 76% {opacity: 0;} }
+@keyframes dot37 { 57% {opacity: 0;} 58% {opacity: 1;} 77% {opacity: 0;} }
+@keyframes dot38 { 58% {opacity: 0;} 59% {opacity: 1;} 78% {opacity: 0;} }
+@keyframes dot39 { 59% {opacity: 0;} 60% {opacity: 1;} 79% {opacity: 0;} }
+@keyframes dot40 { 60% {opacity: 0;} 61% {opacity: 1;} 80% {opacity: 0;} }
+@keyframes dot41 { 61% {opacity: 0;} 62% {opacity: 1;} 81% {opacity: 0;} }
+@keyframes dot42 { 62% {opacity: 0;} 63% {opacity: 1;} 82% {opacity: 0;} }
+@keyframes dot43 { 63% {opacity: 0;} 64% {opacity: 1;} 83% {opacity: 0;} }
+@keyframes dot44 { 64% {opacity: 0;} 65% {opacity: 1;} 84% {opacity: 0;} }
+@keyframes dot45 { 65% {opacity: 0;} 66% {opacity: 1;} 85% {opacity: 0;} }
+@keyframes dot46 { 66% {opacity: 0;} 67% {opacity: 1;} 86% {opacity: 0;} }
+@keyframes dot47 { 67% {opacity: 0;} 68% {opacity: 1;} 87% {opacity: 0;} }
+@keyframes dot48 { 68% {opacity: 0;} 69% {opacity: 1;} 88% {opacity: 0;} }
+@keyframes dot49 { 69% {opacity: 0;} 70% {opacity: 1;} 89% {opacity: 0;} }
+@keyframes dot50 { 70% {opacity: 0;} 71% {opacity: 1;} 90% {opacity: 0;} }
+@keyframes dot51 { 71% {opacity: 0;} 72% {opacity: 1;} 91% {opacity: 0;} }
+@keyframes dot52 { 72% {opacity: 0;} 73% {opacity: 1;} 92% {opacity: 0;} }
+@keyframes dot53 { 73% {opacity: 0;} 74% {opacity: 1;} 93% {opacity: 0;} }
+@keyframes dot54 { 74% {opacity: 0;} 75% {opacity: 1;} 94% {opacity: 0;} }
+@keyframes dot55 { 75% {opacity: 0;} 76% {opacity: 1;} 95% {opacity: 0;} }
+@keyframes dot56 { 76% {opacity: 0;} 77% {opacity: 1;} 96% {opacity: 0;} }
+@keyframes dot57 { 77% {opacity: 0;} 78% {opacity: 1;} 97% {opacity: 0;} }
+@keyframes dot58 { 78% {opacity: 0;} 79% {opacity: 1;} 98% {opacity: 0;} }
+.text-primary {
+    color: #29b664 !important;
+}
+.text-light {
+    font-weight: 300;
+    color: #485e83 !important;
+    font-size: 80%;
+}
+.dark-background {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#152338+0,1e3459+100 */
+    background: #152338; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #152338 0%, #1e3459 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #152338 0%,#1e3459 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #152338 0%,#1e3459 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#152338', endColorstr='#1e3459',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.header{
+    position:absolute;
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.lbrt-stats-holder {
+    border-radius: 6px;
+    overflow: hidden;
+    margin: -50px auto 0 auto;
+    width: 90%;
+}
+.lbrt-stats-holder > div {
+    background: white;
+}
+.navbar-nav .nav-item .nav-link{
+    color: white;
+}
+.lead, .text-light-blue{
+    color:#a0afc9;
+}
+a, .text-light-blue {
+    transition: all 0.5s ease-in-out;
+}
+a:hover .text-light-blue {
+    color: #ef9119;
+}
+.header {z-index: 999;}
+.hero-cta .fab{
+    position:relative;
+    font-size:26px;
+    top:4px;
+    left:15px;
+    margin-left:5px;
+}
+.faq #accordion .card{
+    margin-bottom:15px;
+    border:0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.faq #accordion .card,
+.box-shadow-lg{
+    -webkit-box-shadow: 0px 8px 50px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 8px 50px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 13px 60px 0px rgba(0,0,0,0.1);
+}
+.faq #accordion .card-header{
+    background:white;
+    border:0;
+}
+.secondary-cta {
+    padding: 0;
+    overflow: hidden;
+}
+.liberty-network-inner, .liberty-coins-inner,
+.liberty-network, .liberty-coins {
+    height: 290px;
+}
+.liberty-network, .liberty-coins {
+    position: absolute;
+}
+
+.liberty-coins {
+    background: #f2f2f2;
+    right: 0;
+    top: 290px;
+}
+.liberty-network-inner,
+.liberty-coins-inner {
+    
+}
+@media (min-width: 768px) {
+    .liberty-coins {
+        top: 0;
+    }
+    .liberty-network-inner, .liberty-coins-inner,
+    .liberty-network, .liberty-coins {
+        height: 250px;
+    }
+}
+
+
+/* Roadmap CSS */
+* {
+    box-sizing: border-box;
+  }
+  /* The actual timeline (the vertical ruler) */
+  .lbrt-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* The actual timeline (the vertical ruler) */
+  .lbrt-timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ea9349;
+    top: 0;
+    bottom: 58%;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  /* Container around content */
+  .lbrt-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+  /* The circles on the timeline */
+  .lbrt-container::after {
+    content: '';
+    position: absolute;
+    width: 20px;;
+    height: 20px;
+    right: -10px;
+    background-color: #EBEDF0;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+
+  .lbrt-container.completed::after  {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-weight: 900;
+    background: #ea9349;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 5px;
+ }
+ .lbrt-container.current::after  {
+    content: "•";
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 0.8;
+    font-weight: 900;
+    background: white;
+    color: #ea9349;
+    font-size: 26px;
+    text-align: center;
+    -webkit-box-shadow: 0px 8px 30px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 8px 30px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 8px 30px 0px rgba(0,0,0,0.30);
+    transform: scale(1.4);
+ }
+
+  .lbrt-timeline::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #EBEDF0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -11px;
+  }
+
+  /* The actual content */
+  .lbrt-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  /* Media queries - Responsive timeline on screens less than 768px wide */
+  @media screen and (max-width: 768px) {
+  /* Place the timelime to the left */
+    .lbrt-timeline::after, 
+    .lbrt-timeline::before {
+      left: 31px;
+    }
+
+  /* Full-width containers */
+    .lbrt-container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+
+  /* Make sure that all arrows are pointing leftwards */
+    .lbrt-container::before {
+      left: 60px;
+      border: medium solid #ccc;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent#ccc transparent transparent;
+    }
+
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+        left: 21px;
+    }
+
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+/* End Roadmap CSS */
+.guide {
+    margin-top:8px;
+}
+.lbrt-mcos{
+    margin-right:20px;
+}
+.no-span {
+    display: table;
+    white-space: nowrap;
+    }
+  .no-span:after {
+    border-top: 1px solid #b5c0cb;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.8em;
+    width: 70%;
+    left: 2%;
+  }
+
+  .lbrt-hr{
+      margin-top:70px;
+  }
+.os-icons a {
+    white-space: nowrap;
+    text-decoration:none;
+    color: #b5c0cb;
+}
+.os-icons i {
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+    left: -3px;
+}
+@media (max-width: 768px) {
+    .wallet-cta > * {
+        margin: 0 auto;
+    }
+}
+.liberty-network{
+    background: url('../img/lbrt-cube.png') right bottom no-repeat ;
+    background-size: cover;
+}
+.liberty-coins{
+    background: url('../img/lbrt-wallet.png') right bottom no-repeat;
+    background-size: cover;
+
+}
+.lbrt-deposit{
+    white-space: nowrap;
+    color:#ef9119;
+    
+}
+.lbrt-question{
+    text-decoration: none;
+    color:#30363F;
+    font-size: 1rem;
+}
+.lbrt-question:hover{
+    color:#ef9119;
+}
+
+.faq .card{
+    padding: 1rem;
+}
+.faq .card-body{
+   font-size: 90%;
+   opacity: .7; 
+}
+/* Plus/Minus CSS */
+.panel-title > a:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f068";
+    color:#ef9119;
+
+}
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\f067";
+    color:#ef9119;
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+
+/* End Plus/Minus CSS */
+
+.discort h5{
+    padding-bottom: 1rem;
+    padding-top:2rem;
+    color: #a0afc9;        
+}
+h6{
+    color:grey;
+}
+.timeline-list{
+    list-style-type:decimal-leading-zero;
+    color:#ef9119;
+    font-size:80%;
+    margin:20px 0 0 -16px;
+}
+.timeline-list li:before{
+    border-bottom: 1px solid #ef9119;
+    width:10%;
+    content:"";
+    display:inline-block;
+    position:relative;
+    left:-22px;
+    top:4px;
+
+}
+.timeline-list li span{
+    color:grey;
+    font-size: 16px;
+}
+.timeline-list li{
+    margin-bottom: 10px;
+}
+.lbrt-content .content-inner{
+    position:relative;
+    left:-50px;
+}
+.lbrt-content h5{
+    color:#ef9119;
+    font-weight: bold;
+}
+.lbrt-content{
+    background: #fff url('../img/liberty-icon.png') right bottom no-repeat ;
+    -webkit-box-shadow: 0px 8px 50px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 8px 50px 0px rgba(0,0,0,0.08);
+    box-shadow: 0px 13px 60px 0px rgba(0,0,0,0.08);
+}
+
+.timeline-list li {
+    margin-bottom: 10px;
+}   
+.timeline-list li span{
+    display: inline-block;
+    width:90%;
+   
+}
+@media (min-width: 769px) {
+    .lbrt-container {
+        margin-top: -100px;
+    }
+    .lbrt-timeline{
+        margin-top:120px;
+    }
+}
+.roadmap{
+    background: url('../img/lbrt-city.svg') bottom center no-repeat, url('../img/lbrt-fire.png') bottom 50px center no-repeat;
+    padding-bottom: 250px;
+}
+.roadmap .container{
+    background: url('../img/timeline-background.png') top center no-repeat;
+    background-size: contain;
+}
+/* .roadmap{
+    background: url('../img/lbrt-fire.png') bottom center no-repeat;
+} */
+footer{
+    background-image: -moz-linear-gradient( 130deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
+    background-image: -webkit-linear-gradient( 130deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
+    background-image: -ms-linear-gradient( 130deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
+    box-shadow: inset 0px -1px 25px 0px rgba(190, 190, 190, 0.39);
+    width: 150%%;
+    height: 100%;
+    z-index: 3;
+    padding-top:70px
+}
+.u-list__link{
+    text-decoration: none;
+    color:grey;
+}
+
+.u-list__link:hover{
+    text-decoration: none;
+}
+.list-inline .list-inline-item a{
+    font-size: 18px;
+    color:grey;
+}
+footer .list-unstyled li {
+    margin-bottom: 8px;
+    font-size: 85%;
+}
+#lbrt_navigation li:last-child {
+    margin-left: 10px;
+}
+@media (max-width: 768px) {
+    #lbrt_navigation.navbar-collapse {
+        width: 100%;
+        background: #192b48;
+        padding: 25px 15px;
+    }
+    #lbrt_navigation li:last-child {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .roadmap {
+        background: url(../img/lbrt-city.svg) bottom center no-repeat, url(../img/lbrt-fire.png) bottom 50px left 15px no-repeat;
+    }
+    .timeline-list {
+        width: 130%;
+        max-width: 400px;
+    }
+    .timeline-list li span {
+        font-size: 90%;
+    }
+}
