@@ -48,11 +48,11 @@
             </a>
             <span class="rates-holder d-none d-sm-inline">
                 <img width="16" src="img/lbrt.png"/>
-                <span>1 LBRT</span>
+                <span class="mr-0">1 LBRT = </span><span id="usd">0.00 USD</span>
                 <img width="16" src="img/eth.png"/>
-                <span>0.0358 ETH</span>
+                <span id="eth">0.0000 ETH</span>
                 <img width="16" src="img/btc.png"/>
-                <span>0.000142 BTC</span>
+                <span id="btc">0.0000 BTC</span>
             </span>
             <button style="margin-top: 18px;" class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#lbrt_navigation" aria-controls="lbrt_navigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -61,19 +61,19 @@
             <div class="collapse navbar-collapse justify-content-end float-right" id="lbrt_navigation">
                 <ul class="navbar-nav" style="margin-top: 18px;">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Wallets</a>
+                        <a class="nav-link" href="https://github.com/project-liberty/libertycoin/releases" target="_blank" >Wallets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Explorer</a>
+                        <a class="nav-link" href="http://explorer.lbrt.io/" target="_blank">Explorer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Exchange</a>
+                        <a class="nav-link" href="https://wallet.crypto-bridge.org/market/BRIDGE.LBRT_BRIDGE.BTC" target="_blank">Exchange</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Liberty Coin</a>
+                        <a class="nav-link" href="http://liberty.mn.zone/" target="_blank">Servicenodes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="#">Get Started</a>
+                        <a class="btn btn-primary" href="http://libertycoin-api.azurewebsites.net/api/xbridge" target="_blank">Config generator</a>
                     </li>
                 </ul>
             </div>
@@ -91,11 +91,9 @@
                         <h1 class="text-white"><b>Buy and sell digital currencies</b> from your mobile device</h1>
                         <p class="lead">Liberty empowers the masses to exchange fiat for crypto</p>
                         <div class="hero-cta">
-                            <a href="#" class="btn btn-light">Whitepaper</a>
-                            <a href="#"><i class="text-light-blue fab fa-facebook-square"></i></a>
-                            <a href="#"><i class="text-light-blue fab fa-twitter"></i></a>
-                            <a href="#"><i class="text-light-blue fab fa-telegram-plane"></i></a>
-                            <a href="#"><i class="text-light-blue fab fa-discord"></i></a>
+                            <a href="https://www.lbrt.io/liberty-whitepaper.pdf" target="_blank" class="btn btn-light">Whitepaper</a>
+                            <a href="https://twitter.com/coin_liberty/"target="_blank"><i class="text-light-blue fab fa-twitter"></i></a>
+                            <a href="https://discordapp.com/invite/nxGkagU"target="_blank"><i class="text-light-blue fab fa-discord"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -2221,7 +2219,7 @@
                         </div>
                         <div class="col-9">
                             <p class="m-0 text-light">Current Block</p>
-                            <h4 class="m-0 text-primary">159,413</h4>
+                            <h4 class="m-0 text-primary blockcount">0</h4>
                         </div>
                     </div>
                 </div>
@@ -2232,7 +2230,7 @@
                         </div>
                         <div class="col-9">
                             <p class="m-0 text-light">Circulating Supply</p>
-                            <h4 class="m-0 text-primary">1,192,506</h4>
+                            <h4 class="m-0 text-primary supply">0</h4>
                         </div>
                     </div>
                 </div>
@@ -2243,7 +2241,7 @@
                         </div>
                         <div class="col-9">
                             <p class="m-0 text-light">Masternodes</p>
-                            <h4 class="m-0 text-primary">58</h4>
+                            <h4 class="m-0 text-primary masternodes">0</h4>
                         </div>
                     </div>
                 </div>
@@ -2254,7 +2252,7 @@
                         </div>
                         <div class="col-9">
                             <p class="m-0 text-light">Connections</p>
-                            <h4 class="m-0 text-primary">16</h4>
+                            <h4 class="m-0 text-primary connections">0</h4>
                         </div>
                     </div>
                 </div>
@@ -2272,8 +2270,8 @@
                         <div class="pb-3 text-secondary">Liberty gives you the ability exchange fiat for crypto with speed and ease! It is available for a variaty of platforms and devices.</div>
                         <div class="container">
                             <div class="row wallet-cta">
-                                <a href="#" class="lbrt-mcos btn btn-primary"><i class="fas fa-download mr-1"></i> Liberty for MacOS</a>
-                                <div class="text-secondary guide mt-3 mt-sm-1">New to crypto? <a href="#" class="text-primary">Getting Started Guide »</a></div>
+                                <a href="https://github.com/project-liberty/libertycoin/releases" class="lbrt-mcos btn btn-primary" target="_blank"><i class="fas fa-download mr-1"></i> Get a wallet</a>
+                                <div class="text-secondary guide mt-3 mt-sm-1">New to crypto? <a href="https://www.youtube.com/watch?v=pGqD74KnJ4Y" class="text-primary" target="_blank">Getting Started »</a></div>
                             </div>
                             <div class="lbrt-hr text-secondary pt-5">
                                 <div class="no-span">
@@ -2282,11 +2280,9 @@
                             </div>
                             <div class="row">
                                 <div class="mt-2 os-icons">
-                                    <a href="#" class="col-md-2"><i class="fab fa-windows"></i> Windows</a>
-                                    <a href="#" class="col-md-2"><img width="24" src="img/mac-os.png"/> MacOS</a>
-                                    <a href="#" class="col-md-2"><i class="fab fa-linux"></i>Linux</a>
-                                    <a href="#" class="col-md-2"><i class="fab fa-android"></i> Android</a>
-                                    <a href="#" class="col-md-2"><i class="fab fa-apple"></i> iOS</a>
+                                    <a href="https://s3.amazonaws.com/liberty-builds/4.0.4.1/v4.0.4.1-windows-x64.zip" class="col-md-2"><i class="fab fa-windows"></i> Windows</a>
+                                    <a href="https://s3.amazonaws.com/liberty-builds/4.0.4.1/v4.0.4.1-osx-x64.zip" class="col-md-2"><img width="24" src="img/mac-os.png"/> MacOS</a>
+                                    <a href="https://s3.amazonaws.com/liberty-builds/4.0.4.1/v4.0.4.1-linux-x64.tar.gz" class="col-md-2"><i class="fab fa-linux"></i>Linux</a>
                                 </div>
                             </div>
                         </div>      
@@ -2329,7 +2325,7 @@
                         <div class="d-table-cell align-middle text-sm-left">
                             <h4><b>Be a part from Liberty Network</b></h4>
                             <p><b>Running a Servicenode is easy & profitable!</b> You will receive a fee for verifying the transactions on the network.</p>
-                            <a href="#" class="btn btn-secondary">Become a Servicenode</a>
+                            <a href="http://liberty.mn.zone/" class="btn btn-secondary" target="_blank">Become a Servicenode</a>
                             <span class="col-sm-6 lbrt-deposit d-inline-block pt-2 pt-sm-0"> 5,000 LBRT Deposit</span>
                         </div>
                     </div>
@@ -2337,7 +2333,7 @@
                         <div class="d-table-cell align-middle">
                         <h4><b>Buy Liberty Coins</b></h4>
                         <p><b>Already have a Liberty wallet?</b> It’s time to get it full! Check our Liberty Coins page for tech specification.</p>
-                        <a class="text-white btn btn-primary">Get LBRT here</a>
+                        <a href="https://wallet.crypto-bridge.org/market/BRIDGE.LBRT_BRIDGE.BTC" class="text-white btn btn-primary" target="_blank">Get LBRT here</a>
                     </div>
                     </div>
                 </div>
@@ -2350,10 +2346,10 @@
             <div class="container">
                 <h2 class="text-center" style="padding-bottom: 1.5rem; color: #30363F;"><b>Liberty Roadmap</b></h2>
                 <div class="lbrt-timeline">
-                    <div class="lbrt-container left completed ">
+                    <div class="lbrt-container left completed">
                         <div class="lbrt-content">
                             <div class="content-inner">
-                                <h5 class="m-0">Initial release</h5>
+                                <h5>Initial release</h5>
                                 <h6>June, 2018</h6>
                                 <ol class="timeline-list">
                                     <li><span>Website published</span></li>
@@ -2433,7 +2429,7 @@
 
 
 
-        <section class="faq">
+        <section class="faq" id="lbrt_faq">
             <div class="container">
                 <h2 class="text-center" style="padding-bottom: 1.5rem; color: #30363F;" ><b>Frequently Asked Questions</b></h2>
                 <div class="col-12 text-left" id="accordion">
@@ -2520,7 +2516,7 @@
             </div>
             <div class="discort container text-center">
                 <h5>Couldn't find an answer? Ask in our Discord group! </h5>
-                <a href="#" class="lbrt-mcos btn btn-dark"><i class="fab fa-discord"></i>  Join Chat</a>
+                <a href="https://discordapp.com/invite/nxGkagU" class="lbrt-mcos btn btn-dark"><i class="fab fa-discord"></i>  Join Chat</a>
             </div>
         </section>
     </main>
@@ -2536,10 +2532,9 @@
       
               <!-- List -->
               <ul class="list-unstyled u-list">
-                <li><a class="u-list__link" href="#">Liberty Wallet</a></li>
-                <li><a class="u-list__link" href="#">Discord Server</a></li>
-                <li><a class="u-list__link" href="#">Liberty Exchange (DEX)</a></li>
-                <li><a class="u-list__link" href="#">LBRT Coins</a></li>
+                <li><a class="u-list__link" href="https://github.com/project-liberty/libertycoin/releases">Liberty Wallet</a></li>
+                <li><a class="u-list__link" href="https://discordapp.com/invite/nxGkagU">Discord Server</a></li>
+                <li><a class="u-list__link" href="https://wallet.crypto-bridge.org/market/BRIDGE.LBRT_BRIDGE.BTC">Exchange</a></li>
               </ul>
               <!-- End List -->
             </div>
@@ -2551,10 +2546,10 @@
       
               <!-- List -->
               <ul class="list-unstyled u-list">
-                <li><a class="u-list__link" href="#">Blockchain Explorer </a></li>
-                <li><a class="u-list__link" href="#">Servicenodes</a></li>
-                <li><a class="u-list__link" href="#">Config Generator</a></li>
-                <li><a class="u-list__link" href="#">Tickets</a></li>
+                <li><a class="u-list__link" href="http://explorer.lbrt.io/">Blockchain Explorer </a></li>
+                <li><a class="u-list__link" href="http://liberty.mn.zone/">Servicenodes</a></li>
+                <li><a class="u-list__link" href="http://libertycoin-api.azurewebsites.net/api/xbridge">Config Generator</a></li>
+                <li><a class="u-list__link" href="https://app.zenhub.com/workspace/o/project-liberty/wallet/boards?repos=150000339">Tickets</a></li>
               </ul>
               <!-- End List -->
             </div>
@@ -2566,10 +2561,9 @@
             
                     <!-- List -->
                     <ul class="list-unstyled u-list">
-                      <li><a class="u-list__link" href="#">Tutorials</a></li>
-                      <li><a class="u-list__link" href="#">Community</a></li>
-                      <li><a class="u-list__link" href="#">Help Desk</a></li>
-                      <li><a class="u-list__link" href="#">FAQ   </a></li>
+                      <li><a class="u-list__link" href="https://www.youtube.com/watch?v=pGqD74KnJ4Y">Tutorials</a></li>
+                      <li><a class="u-list__link" href="https://discordapp.com/invite/nxGkagU">Community</a></li>
+                      <li><a class="u-list__link" href="#lbrt_faq">FAQ</a></li>
                     </ul>
                     <!-- End List -->
                   </div>
@@ -2581,9 +2575,8 @@
       
             <!-- List -->
             <ul class="list-unstyled u-list">
-                <li><a class="u-list__link" href="#">Whitepaper</a></li>
-                <li><a class="u-list__link" href="#">Team</a></li>
-                <li><a class="u-list__link" href="#">Careers</a></li>
+                <li><a class="u-list__link" href="https://www.lbrt.io/liberty-whitepaper.pdf" target="_blank">Whitepaper</a></li>
+                <li><a class="u-list__link" href="https://github.com/project-liberty" target="_blank">GitHub</a></li>
             </ul>
             <!-- End List -->
             </div>
@@ -2602,22 +2595,12 @@
                         <!-- Social Networks -->
                         <ul class="list-inline mb-2 pt-lg-5">
                             <li class="list-inline-item">
-                            <a class="   " href="#" target="_blank">
-                                <span class="fab fa-facebook-f  "></span>
+                            <a href="https://twitter.com/coin_liberty/" target="_blank">
+                            <span class="fab fa-twitter  "></span>
                             </a>
                             </li>
                             <li class="list-inline-item">
-                            <a class="   " href="#" target="_blank">
-                                <span class="fab fa-twitter  "></span>
-                            </a>
-                            </li>
-                            <li class="list-inline-item">
-                            <a class=" " href="#" target="_blank">
-                                <span class="fab fa-telegram  "></span>
-                            </a>
-                            </li>
-                            <li class="list-inline-item">
-                            <a class="   " href="#" target="_blank">
+                            <a href="https://discordapp.com/invite/nxGkagU" target="_blank">
                                 <span class="fab fa-discord  "></span>
                             </a>
                             </li>
@@ -2649,8 +2632,24 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script defer src="js/numbro.min.js"></script>
+    <script defer src="js/global.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.getJSON("https://api.coingecko.com/api/v3/coins/liberty", null, function (data) {
+                var LBRT_JSON = JSON.stringify(data);
+                var LibertyCoin = JSON.parse(LBRT_JSON);
+                var LBRT_USD = LibertyCoin.market_data.current_price.usd;
+                var LBRT_BTC = LibertyCoin.market_data.current_price.btc;
+                var LBRT_ETH = LibertyCoin.market_data.current_price.eth;
+                document.getElementById("btc").innerHTML = Math.round(LBRT_BTC * 100000000) / 100000000 + " BTC";
+                document.getElementById("usd").innerHTML = Math.round(LBRT_USD * 1000) / 1000 + " USD";
+                document.getElementById("eth").innerHTML = Math.round(LBRT_ETH * 1000000) / 1000000 + " ETH";
+            })
+        })
+    </script>
   </body>
 </html>
